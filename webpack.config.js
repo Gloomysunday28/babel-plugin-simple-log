@@ -2,6 +2,7 @@ const path = require('path')
 const simple_log = require('./index') 
 
 module.exports = {
+  mode: 'development',
   entry: './example/index.js',
   output: {
     filename: 'boundle.js',
@@ -14,9 +15,7 @@ module.exports = {
       loader: 'babel-loader',
       options: {
         presets: ['@babel/env'],
-        plugins: [[
-          simple_log
-        ]]
+        plugins: [[simple_log]]
       }
     }]
   }

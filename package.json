@@ -1,14 +1,19 @@
 {
-  "name": "babel-plugin-simple-log",
-  "version": "0.0.1",
-  "description": "",
+  "name": "babel-plugin-marsimple-log",
+  "version": "0.0.3",
+  "description": "简易console.log",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode development"
+    "build": "webpack"
   },
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gloomysunday28/babel-plugin-simple-log.git"
+  },
   "author": "marTinCai<459953103@qq.com>",
+  "homepage": "https://github.com/Gloomysunday28/babel-plugin-simple-log",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.4.3",
