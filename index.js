@@ -5,9 +5,7 @@ module.exports = function SimpleLog({types: t}) {
     visitor: {
       Program(path, state /* babel的选项配置 */) { // 访问全部(主体)代码
         let {sign = '\\>'} = state.opts // \\字符串模板解析 (\ \>)
-        console.log(sign)
         if (!signTemplate.includes(sign)) return
-        console.log(123, sign)
         if (!sign.includes('\\>')) sign = `\\${sign}`
         const reg = new RegExp(`${sign}(.*?)$`, 'g') // 搜索注释匹配正则的规则
         path.traverse({ // 遍历Program下面的所有子节点
