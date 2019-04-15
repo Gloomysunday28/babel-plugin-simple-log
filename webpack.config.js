@@ -8,6 +8,9 @@ module.exports = {
     filename: 'boundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  // devServer: {
+  //   contentBase: "./dist"
+  // },
   module: {
     rules: [{
       test: /\.js$/,
@@ -18,5 +21,5 @@ module.exports = {
         plugins: [[simple_log]]
       }
     }]
-  }
+  },
 }
