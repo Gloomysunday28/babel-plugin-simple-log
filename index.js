@@ -3,7 +3,6 @@ const signTemplate = ['{', '>', '?', ':', '*', '$', '%', '#', '@', '!']
 module.exports = function SimpleLog({types: t}) {
   return {
     pre(state) {
-      console.log(state)
     },
     visitor: {
       Program(path, state /* babel的选项配置 */) { // 访问全部(主体)代码
